@@ -1,0 +1,1182 @@
+* {
+  font-family: Georgia, serif;
+}
+
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: hsl(0, 0%, 100%);
+    padding: 0;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+
+  }
+
+  p {
+    text-align: justify;
+    font-family: Georgia, serif;
+  }
+
+  
+  
+  /* Navbar container */
+  .navbar {
+    overflow: fixed;
+    background-color: #333;
+    font-family: Georgia, serif;
+    position: relative;
+    top: -10px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: Georgia, serif;
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #e1959b;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-arrow::after {
+    content: "\25BC"; /* Unicode character for down arrow */
+    margin-left: 5px; /* Adjust as needed for spacing */
+  }
+  
+  /* Position the arrow */
+  .dropdown-arrow::after {
+    position: relative;
+  }
+  
+  /* Style the arrow */
+  .dropdown-arrow::after {
+    font-size: 0.8em; /* Adjust as needed */
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+  
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    position: relative; /* Add position relative */
+    top: -10px; /* Move the logo upwards to align with the navbar */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+    margin-right: 10px; /* Add spacing between logo image and text */
+  }
+  
+  .logo-text {
+    font-size: 1.2rem; /* Adjust as needed */
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+
+  #home {
+    padding: 50px 0;
+  }
+  
+  .home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .home-text {
+    flex: 1;
+    margin-right: 1px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fcc0c5, 0 0 30px #fcc0c5, 0 0 40px #fcc0c5, 0 0 50px #e6c4f8, 0 0 60px #fcc0c5, 0 0 70px #fcc0c5;
+  }
+ 
+    
+  
+  
+
+  
+
+  .home-text h1 {
+    font-size: 3.5rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Add bold font weight */
+    font-family: 'Roboto', sans-serif; /* Example font-family */
+    color: #333; /* Example color */
+    margin-bottom: 10px; /* Add some bottom margin */
+  }
+
+  .home-text h1 span {
+    color: #ff848e; /* Color for the name */
+  }
+  
+  .home-photo {
+    margin-left: 20px; /* Move the image to the right */
+    width: 400px; /* Adjust the width of the image */
+  }
+  
+  .home-photo img {
+    width: 100%;
+    max-width: 100%; /* Adjust as needed */
+  }
+
+  .btn-container {
+    text-align: left;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c86cf8;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-home:hover {
+    background-color: #fcc0c5;
+  }
+  
+
+
+
+  #table-of-contents h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+
+#table-of-contents img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add some border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+  
+  .about-title {
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .about-photo {
+    margin-right: 20px;
+  }
+  
+  .about-photo img {
+    max-width: 100%;
+    width: 200px; /* Adjust as needed */
+    border-radius: 5px;
+    height: 250px
+  }
+  
+  .about-details {
+    text-align: justify;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-photo {
+    flex: 1;
+    margin-right: 20px; /* Adjust as needed */
+  }
+  
+  .about-details {
+    flex: 2;
+  }
+  
+
+#transcripts {
+  text-align: center;
+}
+
+.transcripts-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.transcript-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.transcripts-content {
+  margin-top: 20px; /* Add some space between the title and buttons */
+}
+
+.transcripts-content .btn {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.container {
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.transcript-buttons {
+  text-align: center; /* Align buttons to the center */
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.transcript-buttons .btn {
+  display: inline-block; /* Make buttons inline */
+  padding: 10px 20px;
+  font-size: 16px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  color: black; /* Text color */
+  background-color: #c86cf8; /* Button background color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.transcript-buttons .btn:hover {
+  background-color: #fcc0c5; /* Change background color on hover */
+}
+
+
+
+
+/* Centered Description */
+.transcripts-description {
+  text-align: justify;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Justify the Paragraph */
+.transcripts-description p {
+  text-align: justify;
+}
+
+
+.transcript-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to full viewport height */
+}
+
+.transcript-content embed {
+  width: 80vw; /* Set the width to 80% of the viewport width */
+  height: 100vh; /* Set the height to 80% of the viewport height */
+}
+
+
+
+/* Style for Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #c86cf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #fcc0c5;
+}
+
+  
+#professional-affiliations {
+  padding: 40px 0;
+}
+
+.affiliations-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.affiliations-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: justified;
+}
+
+.affiliation-card {
+  position: relative;
+  width: 22%; /* Adjust width as needed */
+  height: 200px;
+}
+
+.affiliation-card img {
+  width: 100%;
+  height: 100%; /* Ensure images fill their parent containers */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.affiliation-card:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.view-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px; /* Adjust padding as needed */
+  max-width: 100%; /* Ensure button width does not exceed container width */
+  background-color: #c86cf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.view-btn:hover {
+  background-color: #fcc0c5;
+}
+
+/* Add this CSS to style the modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+}
+
+/* Add this CSS to prevent scrolling when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+.close-btn {
+  font-size: 50px; /* Adjust the font size as needed */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+  
+#skills {
+  padding: 40px 0;
+}
+
+.skills-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  margin-bottom: 10px; /* Reduce space between containers */
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-card h3,
+.skill-card p {
+  text-align: center; /* Center-align text */
+   margin-top: 10px;
+}
+
+.skill-card {
+  width: calc(23% - 10px); /* Adjust width and consider margin */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+.skill-card img {
+  width: 80%; /* Adjust size of the logo images */
+  height: auto;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.skill-card h3 {
+  margin-top: 10px;
+}
+
+.skill-card p {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+
+#specific-skills {
+  padding: 40px 0;
+}
+
+.specific-skills-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.specific-skills-content {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
+}
+
+
+.specific-skill-card {
+  position: relative;
+  width: 250px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  overflow: hidden; /* Ensure images don't overflow */
+  margin: 0 10px 20px; /* Adjust margins as needed */
+}
+
+.specific-skill-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images fully cover the cards */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.specific-skill-card:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.view-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px; /* Adjust padding as needed */
+  max-width: 100%; /* Ensure button width does not exceed container width */
+  background-color: #fcc0c5;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.view-btn:hover {
+  background-color: #c86cf8;
+}
+
+
+
+#work-samples {
+  padding: 40px 0;
+}
+
+.work-samples-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.work-samples-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+}
+
+.work-sample-card {
+  position: relative;
+  width: calc(33.33% - 20px); /* 3 images per row, adjust as needed */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+.work-sample-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.work-sample-card:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.view-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px; /* Adjust padding as needed */
+  max-width: 100%; /* Ensure button width does not exceed container width */
+  background-color: #fcc0c5;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.view-btn:hover {
+  background-color: #c86cf8;
+}
+
+#work-philosophy {
+  padding: 40px 0;
+}
+
+.work-philosophy-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.work-philosophy-content {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.work-philosophy-content p {
+  margin-bottom: 20px;
+}
+
+
+
+#honors-awards {
+  padding: 40px 0;
+}
+
+.honors-awards-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.honors-awards-carousel {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: space-between; /* Ensure images don't overlap */
+  align-items: center; /* Center images vertically */
+  overflow: hidden; /* Hide overflow */
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Don't allow items to grow or shrink */
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.carousel-item img {
+  max-width: 500px; /* Adjust the maximum width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+
+#evaluations {
+  padding: 40px 0;
+}
+
+.evaluations-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.evaluations-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.evaluation-card {
+  position: relative;
+  width: calc(25% - 20px); /* Adjust width and consider margin */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.evaluation-card:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.view-btn-evaluations {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-weight: 900;
+  transform: translateX(-50%);
+  padding: 8px 16px; /* Adjust padding as needed */
+  max-width: 100%; /* Ensure button width does not exceed container width */
+  background-color: #fcc0c5;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.view-btn-evaluations:hover {
+  background-color: #c86cf8;
+}
+
+
+#student-learning {
+  padding: 40px 0;
+}
+
+.student-learning-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.student-learning-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.learning-card {
+  position: relative;
+  width: calc(25% - 20px); /* Adjust width and consider margin */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.learning-card:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.view-btn-learning {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-weight: 900;
+  transform: translateX(-50%);
+  padding: 8px 16px; /* Adjust padding as needed */
+  max-width: 100%; /* Ensure button width does not exceed container width */
+  background-color: #fcc0c5;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.view-btn-learning:hover {
+  background-color: #c86cf8;
+}
+
+
+#classroom-innovations {
+  padding: 40px 0;
+}
+
+.innovations-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.innovations-carousel {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.carousel-item img {
+  max-width: 500px;
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+
+
+/* Style for the section */
+#video-audio-recordings {
+  padding: 50px 0;
+}
+
+.recordings-title {
+  text-align: center;
+}
+
+.recordings-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recording-card {
+  margin: 10px;
+  width: 45%; /* Adjust width as needed */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+
+.video-container video {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.view-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-weight: 900;
+  transform: translateX(-50%);
+  padding: 8px 16px; /* Adjust padding as needed */
+  max-width: 100%; /* Ensure button width does not exceed container width */
+  background-color: #fcc0c5;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.view-btn:hover {
+  background-color: #c86cf8;
+}
+
+
+
+
+
+   
+  #contact {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px; /* Add some space below the title */
+}
+
+.contact-content form {
+  width: 100%;
+  max-width: 400px; /* Limit content width */
+}
+
+.contact-content input,
+.contact-content textarea,
+.contact-content button {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-content textarea {
+  resize: vertical;
+}
+
+.contact-content button {
+  background-color: #c86cf8;
+  color: black;
+  font-weight:900;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-content button:hover {
+  background-color: #fcc0c5;
+}
+
+.resume-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+  
+  
+  
+  
+  
+  footer {
+    background-color: black;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
